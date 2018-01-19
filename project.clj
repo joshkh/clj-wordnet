@@ -1,3 +1,7 @@
+(require 'cemerick.pomegranate.aether)
+    (cemerick.pomegranate.aether/register-wagon-factory!
+     "http" #(org.apache.maven.wagon.providers.http.HttpWagon.))
+
 (defproject clj-wordnet "0.3.0-SNAPSHOT"
   :description "A WordNet/JWI wrapper library"
   :url "https://github.com/delver/clj-wordnet"
